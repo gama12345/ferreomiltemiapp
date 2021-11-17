@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_client"
+    app:startDestination="@id/viewAccountFragment">
+
+    <fragment
+        android:id="@+id/viewAccountFragment"
+        android:name="com.example.ferreteriaomiltemi.view.client.ViewAccountFragment"
+        android:label="fragment_client_viewAccount"
+        tools:layout="@layout/fragment_view_account" >
+        <action
+            android:id="@+id/action_viewAccountFragment_to_editAccountFragment"
+            app:destination="@id/editAccountFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/editAccountFragment"
+        android:name="com.example.ferreteriaomiltemi.view.client.EditAccountFragment"
+        android:label="fragment_client_editAccount"
+        tools:layout="@layout/fragment_edit_account" >
+        <action
+            android:id="@+id/action_editAccountFragment_to_viewAccountFragment"
+            app:destination="@id/viewAccountFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_client"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/editAccountEmailFragment"
+        android:name="com.example.ferreteriaomiltemi.view.client.EditAccountEmailFragment"
+        android:label="fragment_client_editAccountEmail"
+        tools:layout="@layout/fragment_edit_account_email" >
+        <action
+            android:id="@+id/action_editAccountEmailFragment_to_editAccountFragment"
+            app:destination="@id/editAccountFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_client"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/editAccountPasswordFragment"
+        android:name="com.example.ferreteriaomiltemi.view.client.EditAccountPasswordFragment"
+        android:label="fragment_client_editAccountPassword"
+        tools:layout="@layout/fragment_edit_account_password" >
+        <action
+            android:id="@+id/action_editAccountPasswordFragment_to_editAccountFragment"
+            app:destination="@id/editAccountFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_client"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

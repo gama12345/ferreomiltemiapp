@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "608635720083",
+    "project_id": "ferreteria-omiltemi",
+    "storage_bucket": "ferreteria-omiltemi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608635720083:android:4c6e09de0a647fc95c1866",
+        "android_client_info": {
+          "package_name": "com.example.ferreteriaomiltemi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608635720083-bi659gpoiskrb4q5s91m7sl9ki5f0vtj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqNeqVn_LBAhr9jJHMYjYWvFE3KvG4JYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608635720083-bi659gpoiskrb4q5s91m7sl9ki5f0vtj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
